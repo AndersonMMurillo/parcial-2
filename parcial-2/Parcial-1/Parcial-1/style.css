@@ -1,0 +1,342 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --background-principal: green;
+    --background-secundario: white;
+    --background-terciario: black;
+    --color-letra: white;
+}
+
+body {
+    min-width: 100vw;
+    background-color: var(--background-principal);
+    overflow: hidden;
+    
+}
+
+
+.header {
+    position: fixed; /*El elemento es fijado al viewport, es decir que si se hace scroll, el elmento seguirá en la posición fijada*/
+    top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* Los elementos del contenedor se envian hacia los lados */
+    align-items: center;
+    background-color: var(--background-principal);
+    padding: 0 0.5rem 0 2rem; /*TOP: 0px RIGHT: 8px BOTTOM: 0px LEFT: 32px*/
+}
+
+.header h1 {
+    color: var(--color-letra)
+}
+
+.header .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /* Se le da un margen igual a cada elemento del contenedor */
+    align-items: center;
+    height: 100%;
+    width: 30vw;
+    padding: 1rem;
+    background-color: var(--background-principal);
+}
+
+.navbar a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 20%;
+    height: 50%;
+    border-radius: 50%;
+}
+
+.link img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid var(--background-terciario);;
+}
+
+.link:hover {
+    box-shadow: 0 0 2rem var(--background-terciario);;
+    cursor: pointer; /* el puntero se convierte en una manito */
+}
+
+section {
+    display: flex;
+    justify-content: space-around; /* Se le da un margen igual a cada elemento del contenedor */
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-principal);
+}
+
+.contenedor-texto {
+    width: 40%;
+    color: var(--color-letra);
+}
+
+.contenedor-texto h2 {
+    font-size: 6rem;
+    font-weight: 600; /*Que tanta negrilla se quiere*/
+}
+
+.seccion-uno img {
+    border-radius: 50%;
+    height: 50%;
+    border: 5px solid var(--background-terciario);;
+}
+
+
+.header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--background-principal);
+        padding: 1rem;
+    }
+
+ .logo-y-titulo{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+ .logo-superior {
+        width: 30px;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+   
+    .navbar a {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 20%;
+        height: 50%;
+        border-radius: 50%;
+    }
+    
+    .link img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 5px solid var(--background-terciario);;
+    }
+    
+    .link:hover {
+        box-shadow: 0 0 2rem var(--background-terciario);;
+        cursor: pointer; 
+    }
+    
+    section {
+        display: flex;
+        justify-content: space-around; 
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--background-principal);
+    }
+    
+.contenedor-texto {
+    width: 40%;
+    color: var(--color-letra);
+    justify-content: space-around;
+    }
+    
+.contenedor-texto h2 {
+    font-size: 2rem;
+    font-weight: 600; 
+}
+    
+.seccion-uno img {
+    height: 50vh;
+    border-radius: 50%;
+    border: 5px solid var(--background-terciario);
+}
+    
+.seccion-uno img {
+    border-radius: 50%;
+    height: 50%;
+    border: 5px solid var(--background-terciario);
+ }
+
+
+.wsapp {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 6.25rem; 
+    height: 6.25rem; 
+    position: fixed; 
+    bottom: 1px; 
+    right: 1px;
+    border-radius: 30%;
+
+   
+}
+
+.contenedor-servicios {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    width: 90%;
+    height: 80%;
+    border: 5px solid var(--background-terciario);
+    border-radius: 1rem;
+    flex-wrap: wrap;
+    margin: right  100%; 
+}
+
+.contenedor-servicios .servicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    border: 3px solid var(--background-terciario);
+    row-gap: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 4px;
+    
+}
+
+.contenedor-servicios .servicio h3 {
+    border: 3px solid var(--background-secundario); 
+}
+
+#seccion-dos h2 {
+    border: px solid var(--background-secundario);
+    padding: 1rem;
+    text-align: center; 
+    width: 40%; 
+    margin: 0 auto; 
+    margin-top: 2%;
+}
+
+
+.colaboraciones {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    width: 90%;
+    height: auto;
+    background-color:  var(--background-principal);
+    justify-content: right;
+    border-radius: 1rem;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-left: 60px; 
+  
+}
+
+.Colaboradores {
+    text-align: center;
+    width: 20rem; 
+    margin: 10%; 
+    padding: 20px;
+    background-color:var(--background-secundario); 
+    border: 1px solid white; 
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: -10vw; /
+ }
+
+.Colaboradores img {
+    max-width: 100%;
+    border-radius: 50%; 
+}
+
+.Colaboradores h3 {
+    font-size: 1rem;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-right: 20px; 
+}
+
+.Colaboradores p {
+    color: #777;
+    margin: 0;
+}
+
+
+.titulo-colaboradores {
+ margin-bottom: 35vw; 
+ border: 5px solid var(--background-secundario);
+ padding-bottom: 2rem;
+ text-align: center; 
+ width: 30%; 
+ margin: 0 auto; 
+ margin-top: 5%;
+}
+
+    
+
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--background-principal);
+}
+
+.Footer {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flecha {
+    margin-right: 10px; 
+   
+}
+
+.flecha button {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  
+}
+
+.flecha button img {
+    width: 30px;
+    height: 40px;
+}
+
+.copyright {
+    display: flex;
+    flex-grow: 1;
+    white-space: normal;
+    align-items: center;
+    text-align: justify;
+    margin-top: 200px;
+    
+}
+
+
+
+.separator {
+    border-bottom: 5px solid var(--background-secundario); 
+    width: 100%; 
+    top: 3;
+    left: 0; 
+  
+}
+
